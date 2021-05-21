@@ -21,3 +21,12 @@ Example of writing to partitioned parquet using the https://data.cityofnewyork.u
 **Specifically:**
 
 * Read from delimited format, create partition keys based on Year / Month / Day, ouptut to ADLS gen2.
+
+### Output_From_Data_Flow
+
+Example of capturing output from a Data Flow for downstream processing using the https://data.cityofnewyork.us/Transportation/2019-Yellow-Taxi-Trip-Data/2upf-qytp data set.
+
+**Specifically:**
+
+* Using a Data Flow, read from delimited format, perform aggregations, capture smallest value.
+* Aggregation is cached, then used to set two variables in main pipeline on successful completion of the Data Flow task.
